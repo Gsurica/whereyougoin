@@ -2,10 +2,6 @@ import { Injectable } from "@nestjs/common";
 import OpenAI from "openai";
 import { ObjectCaller } from "src/root/Models/ObjectCaller";
 
-const openai = new OpenAI({
-    apiKey: "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"
-})
-
 @Injectable()
 export class WhereService {
     async postGPTPrompt(
