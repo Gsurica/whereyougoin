@@ -7,9 +7,12 @@ import { FindCController } from './controllers/FindC.controller';
 import { FindCService } from './services/FindC.service';
 import { SearchForCEPController } from './controllers/SearchForCEP.controller';
 import { SearchForCEPService } from './services/SearchForCEP.service';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [],
+  imports: [ConfigModule.forRoot({
+    envFilePath: [".env.development"]
+  })],
   controllers: [AppController, WhereController, FindCController, SearchForCEPController],
   providers: [AppService, WhereService, FindCService, SearchForCEPService],
 })
