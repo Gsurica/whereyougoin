@@ -24,8 +24,8 @@ export class SearchForCEPController {
         
         return {
             status: 200,
-            message: "CEP retornado com sucesso!",
-            data: result
+            message: "Endereço retornado com sucesso!",
+            data: result.data
         }
     }
 }

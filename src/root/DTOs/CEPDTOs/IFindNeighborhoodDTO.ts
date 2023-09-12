@@ -1,5 +1,5 @@
 export interface IFindNeighborhoodDTO {
     sign: string;
     cityName: string;
-    countryName: string;
+    streetName: string;
 }
